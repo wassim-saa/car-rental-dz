@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Rent | حجز السيارات الفاخرة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+‏<h1>فخامة القيادة بين يديك</h1>
+‏<p>سواء كنت عريساً يبحث عن ليلة العمر، أو رجل أعمال يطلب التميز، نحن هنا لخدمتك.</p>
+</header>
+
+<div class="container">
+<form id="bookingForm">
+<h2>إستمارة الحجز السريع</h2>
+
+<div class="section">
+<label>نوع السيارة:</label>
+<select name="car_type" required>
+<option value="porsche">بورش (Porsche)</option>
+<option value="bmw">بي إم دبليو (BMW)</option>
+<option value="mercedes">مرسيدس (Mercedes)</option>
+</select>
+
+<label>لون السيارة المفضل:</label>
+<input type="text" name="color" placeholder="مثلاً: أسود ملكي، أبيض لؤلؤي" required>
+</div>
+
+<div class="section">
+<label>الاسم الكامل:</label>
+<input type="text" name="name" required>
+
+<label>العمر:</label>
+<input type="number" name="age" min="18" required>
+
+<label>رقم الهاتف:</label>
+<input type="tel" name="phone" required>
+</div>
+
+<div class="section">
+<label>الولاية (58 ولاية):</label>
+<select name="state" id="states" required>
+<option value="1">01 - أدرار</option>
+<option value="19">19 - سطيف</option>
+<option value="58">58 - المنيعة</option>
+</select>
+
+<label>مدة الحجز (بالأيام):</label>
+<input type="number" name="days" min="1" required>
+</div>
+
+<div class="section">
+<label>هل تحتاج سائقاً؟</label>
+<div class="radio-group">
+<input type="radio" name="driver" value="yes" id="with_driver"> 
+<label for="with_driver">مع سائق (خدمة VIP - فخامة مطلقة)</label>
+<br>
+<input type="radio" name="driver" value="no" id="no_driver" checked> 
+<label for="no_driver">بدون سائق (قيادة حرة - سعر اقتصادي)</label>
+</div>
+</div>
+
+<button type="submit">إرسال طلب الحجز</button>
+</form>
+</div>
+
+</body>
+</html>
